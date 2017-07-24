@@ -15,8 +15,6 @@ We recommend using Anaconda to install the python environment and the prerequisi
 - Scipy
 - h5py
 - Matplotlib
--
-
 
 ##### 1.2 AISAR   
 To use the package add the path to AISAR directory to your $PYTHONPATH and add AISAR to your $path. Depending on your shell you may use commands such as the following examples to setup pysar:   
@@ -26,12 +24,11 @@ To use the package add the path to AISAR directory to your $PYTHONPATH and add A
    
 Then add the following to your source file:
 For bash user, add to your .bashrc file:   
-
     export AISAR_HOME="~/python/AISAR"
     export PYTHONPATH=${PYSAR_HOME}:${PYTHONPATH}   
     export PATH="${PYSAR_HOME}/pysar:$PATH"   
    
-   
+  
 ### 2. Running AISAR
 
 
