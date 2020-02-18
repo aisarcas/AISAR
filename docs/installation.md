@@ -1,28 +1,24 @@
 # Installation guide
 How to install AISAR InSAR code.
 
-* Set the required environment variables (`$RSMASINSAR_HOME, $JOBSCHEDULER, $QUEUENAME, $SCRATCHDIR`) in your [.bashrc](./bashrc_contents.md) 
-. There are several other customizable environment variables. The defaults are given [here](./custom_variables.md). You may want to set your variables in an external file as we do in Miami (see [example](https://gist.github.com/falkamelung/f1281c38e301a3296ab0483f946cac4b)).
+* Set the required environment variables in your [.bashrc](./bashrc_contents.md) 
+. There are several other customizable environment variables. The defaults are given [here](./custom_variables.md). 
 
 - 
 
 * Go to the area where you want to install the code:
 
 ```
-cd ~/aisar
+cd ~/
 ```
 
 * Install the code using the commands below (you need a reasonable recent git version ). 
 
 ```
 bash
-[ -f ~/local_git/miniconda3/bin/git ] && alias git=~/local_git/miniconda3/bin/git	
-
 git clone https://github.com/xiechou/AISAR.git ;
-cd aisar
+cd AISAR/setup
 
-
-cd setup
 rm -r ../3rdparty/miniconda3
 miniconda_version=Miniconda3-4.6.14-Linux-x86_64.sh
 wget http://repo.continuum.io/miniconda/$miniconda_version --no-check-certificate #; if ($? != 0) exit; 
