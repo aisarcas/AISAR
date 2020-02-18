@@ -1,0 +1,7 @@
+numpy
+scipy
+Matplotlib
+Cython
+h5py
+GDAL
+joblib
