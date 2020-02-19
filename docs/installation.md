@@ -4,8 +4,6 @@ How to install AISAR InSAR code.
 * Set the required environment variables in your [.bashrc](./bashrc_contents.md) 
 . There are several other customizable environment variables. The defaults are given [here](./custom_variables.md). 
 
-- 
-
 * Go to the area where you want to install the code:
 
 ```
@@ -26,5 +24,14 @@ chmod 755 $miniconda_version
 mkdir -p ../3rdparty
 ./$miniconda_version -b -p ../3rdparty/miniconda3
 ../3rdparty/miniconda3/bin/conda config --add channels conda-forge
-../3rdparty/miniconda3/bin/conda install --yes --file ./conda.txt
+
+
+```
+
+* Install gdal and fftw lib for AISAR
+```
+../3rdparty/miniconda3/bin/conda install gdal --yes
+ln -s ../3rdparty/miniconda3/lib/libgdal.so ../3rdparty/miniconda3/lib/libgdal1.5.0.so.1
+cp setup/*fftw.so.2 ../3rdparty/miniconda3/lib
+cp setup/*fftw.h ../3rdparty/miniconda3/include
 ```
