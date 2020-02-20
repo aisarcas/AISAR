@@ -32,6 +32,6 @@ mkdir -p ../3rdparty
 ```
 ../3rdparty/miniconda3/bin/conda install gdal --yes
 ln -s ../3rdparty/miniconda3/lib/libgdal.so ../3rdparty/miniconda3/lib/libgdal1.5.0.so.1
-mv setup/*fftw.so.2 ../3rdparty/miniconda3/lib
-mv setup/*fftw.h ../3rdparty/miniconda3/include
+mv ./*fftw.so.2 ../3rdparty/miniconda3/lib
+mv ./*fftw.h ../3rdparty/miniconda3/include
 ```
