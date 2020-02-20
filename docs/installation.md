@@ -35,6 +35,5 @@ ln -s ../3rdparty/miniconda3/lib/libgdal.so ../3rdparty/miniconda3/lib/libgdal1.
 mv ./*fftw.so.2 ../3rdparty/miniconda3/lib
 mv ./*fftw.h ../3rdparty/miniconda3/include
 
-cp -R /home/xiechou/AISAR/3rdparty/GAMMA_SOFTWARE-20111212/ 3rdparty/
 cp -R /home/xiechou/aisar/source /home/xiechou/aisar/scripts/ ./
 ```
