@@ -24,8 +24,6 @@ chmod 755 $miniconda_version
 mkdir -p ../3rdparty
 ./$miniconda_version -b -p ../3rdparty/miniconda3
 ../3rdparty/miniconda3/bin/conda config --add channels conda-forge
-
-
 ```
 
 * Install gdal and fftw lib for AISAR
@@ -36,4 +34,5 @@ mv ./*fftw.so.2 ../3rdparty/miniconda3/lib
 mv ./*fftw.h ../3rdparty/miniconda3/include
 
 cp -R /home/xiechou/aisar/source /home/xiechou/aisar/scripts/ ./
+chmod -R 740 ../source ../scripts
 ```
