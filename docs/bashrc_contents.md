@@ -14,7 +14,7 @@ shopt -s expand_aliases
 #[ -n module ] && module purge
 umask 002
 
-export AISAR_HOME=~/aisar
+export AISAR_HOME=~/AISAR
 export JOBSCHEDULER=LSF
 export QUEUENAME=general
 export SCRATCHDIR=/data/xiechou
@@ -29,7 +29,7 @@ export WEATHER_DIR=${WORKDIR}/WEATHER
 export TESTDATA_ISCE=${WORKDIR}/TESTDATA_ISCE
 
 
-alias s.aisar='cd $AISAR_HOME; source setup/environment.bash; source ~/accounts/alias.bash;' 
+alias s.aisar='cd $AISAR_HOME; source setup/environment.bash; source setup/alias.bash;' 
 export HISTSIZE=1000
 export HOST=centos7.bogon105.com
 ```
