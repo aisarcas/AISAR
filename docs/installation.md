@@ -29,7 +29,7 @@ mkdir -p ../3rdparty
 * Install gdal and fftw lib for AISAR
 ```
 ../3rdparty/miniconda3/bin/conda install --yes --file ../docs/conda.txt
-ln -s ../3rdparty/miniconda3/lib/libgdal.so ../3rdparty/miniconda3/lib/libgdal1.5.0.so.1
+ln -s ~/AISAR/3rdparty/miniconda3/lib/libgdal.so ~/AISAR/3rdparty/miniconda3/lib/libgdal1.5.0.so.1
 mv ./*fftw.so.2 ../3rdparty/miniconda3/lib
 mv ./*fftw.h ../3rdparty/miniconda3/include
 
